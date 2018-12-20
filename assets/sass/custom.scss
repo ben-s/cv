@@ -11,6 +11,7 @@ body {
 
 #main > .panel {
     padding-top:2.5em;
+    padding-bottom: 6em;
 }
 
 header > p {
@@ -33,10 +34,10 @@ p {
 .job {   
     padding: 1em 0;
     
-      & + .job {
+   
     //     border-top:1px solid $color_strike;
-    border-image: linear-gradient(to right ,#85D8CE, $color_main) 1 / 1px 0 0 0 ;
-    }
+    border-image: linear-gradient(to right ,#85D8CE, $color_main) 1 / 0 0 1px 0 ;
+    
 }
 
 .job__entreprise {
@@ -65,3 +66,7 @@ p {
     margin-bottom:0;
 }
 
+
+.name {
+margin-bottom:0;
+}
