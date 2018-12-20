@@ -1,0 +1,67 @@
+$color_main:#085078;
+$color_secondary:#67A29A;
+$color_text:#666;
+$color_strike: #85D8CE;
+
+body {
+    background: #085078;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #85D8CE, $color_main);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #85D8CE, $color_main); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#main > .panel {
+    padding-top:2.5em;
+}
+
+header > p {
+    color: $color_text;
+}
+
+
+
+h1,h2,h3 {
+    color:$color_main;
+    font-weight:300;
+}
+h2 {
+    line-height:1.25em
+}
+p {
+    line-height:1.5em;
+}
+
+.job {   
+    padding: 1em 0;
+    
+      & + .job {
+    //     border-top:1px solid $color_strike;
+    border-image: linear-gradient(to right ,#85D8CE, $color_main) 1 / 1px 0 0 0 ;
+    }
+}
+
+.job__entreprise {
+    color: $color_main;
+    margin:0;
+    a {
+        color: $color-main;
+    }
+}
+
+.job__title {
+    color:$color_main;
+    display:block;
+    line-height: 1.25em;   
+}
+.job__dates {
+    display:block;
+    font-size:0.7em;
+    line-height: 1.25em;
+}
+
+.job__missions {
+    font-size: 0.825em;
+    line-height: 1.25em;
+    margin-top: 1em;
+    margin-bottom:0;
+}
+
